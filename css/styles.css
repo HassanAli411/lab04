@@ -5,19 +5,47 @@
 
 body {
   background: #fcc;
-} 
+}
 
+.menu{
+  background-color: black;
+  color: yellow;
+  line-height: 2em;
+}
 
+nav {
+  display: none;
+  justify-content: center;
+  background: #333;
+  min-width: 500px;
+}
 
+.menu:hover + nav, nav:hover{
+  display: flex;
+}
+
+nav a {
+  padding: 1.25em 1.5em;
+  color: #ccc;
+  background: #555;
+  text-decoration: none;
+  transition: all 1.5s;
+}
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-  
+.menu{
+  display: none;
+}
+
+nav {
+  display: flex;
+}
   body {
     background: #cfc;
-  } 
+  }
 }
 
 
@@ -30,5 +58,5 @@ body {
 
   body {
     background: #ccf;
-  } 
+  }
 }
